@@ -86,10 +86,10 @@ footer a:hover {
 **/
 .fake-button:hover,
 .blue-hover:hover {
-  text-decoration: underline;
-  background-color: #4278e5;
-  color: white;
-  cursor: pointer;
+    text-decoration: underline;
+    background-color: #4278e5;
+    color: white;
+    cursor: pointer;
 }
 
 
@@ -100,43 +100,42 @@ footer a:hover {
     - x the header is 150px tall.
     - x the header image is 100px wide and tall with 25px of space above, below, and on its left, and the top-level heading is centered in the remaining width.
     - x there will be 25px of space between the header and main, and 50px of space between main and footer.
-    - the footer will be 60px tall, have a font-weight of 200, and the text within will be centered vertically and horizontally.
+    - x the footer will be 60px tall, have a font-weight of 200, and the text within will be centered vertically and horizontally.
 */
 
 /** header: mustard-yellow, 150px tall **/
 header {
-  background-color: #E5AF42;
-  height: 150px;
-  display: flex;
-  align-items: center;
+    background-color: #E5AF42;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
 }
 /** header img: 100px wide and tall with 25px of space above, below, and on its left **/
 header img {
-  width: 100px;
-  height: 100px;
-  margin: 25px 0 25px 25px;
+    width: 100px;
+    height: 100px;
+    margin: 25px 0 25px 25px;
 }
 /** top-level heading is centered in the remaining width **/
 header h1 {
-  flex: 1;
-  text-align: center;
+    flex: 1;
+    text-align: center;
 }
 /** space between header and main, and main and footer **/
-header + section {
-  margin-top: 25px;
-}
-section + footer {
-  margin-bottom: 50px;
+main {
+    margin-top: 25px;
+    margin-bottom: 50px;
 }
 /** footer: mustard-yellow, 60px tall, font-weight of 200, text centered vertically and horizontally **/
 footer {
-  background-color: #E5AF42;
-  height: 60px;
-  font-weight: 200;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+    background-color: #E5AF42;
+    height: 60px;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 
@@ -154,44 +153,38 @@ footer {
 
 /** 2-column layout **/
 .layout {
-  display: flex;
+    display: flex;
 }
 /** Text column left **/
 .layout .text {
-  flex: 1;
+    flex: 1;
 }
 /** Image column: right, 300px wide, 25px of space to the left, 50px of space below **/
 .layout img {
-  width: 300px;
-  margin-left: 25px;
-  margin-bottom: 50px;
+    width: 300px;
+    margin-left: 25px;
+    margin-bottom: 50px;
 }
 /** h2 styling: line-height equal to font size **/
 .layout h2 {
-  line-height: 36px; /* equal to font size */
+    line-height: 36px; /* equal to font size */
 }
 /** each paragraph: 12px of space beneath it **/
 .layout p {
-  margin-bottom: 12px;
+    margin-bottom: 12px;
 }
 /** buttons container: centered with gap between them **/
 .buttons {
-  width: 650px;        /* 250 + 150 + 250 */
-  margin: 24px auto;   /* centers the pair horizontally */
+    width: 650px;        /* 250 + 150 + 250 */
+    margin: 24px auto;   /* centers the pair horizontally */
 }
 .fake-button {
-  width: 250px;
-  display: inline-block;
+    width: 250px;
+    display: inline-block;
 }
 .fake-button:first-child {
-  margin-right: 150px;
+    margin-right: 150px;
 }
-
-
-
-
-
-
 
 
 /************* bookings page *************/
