@@ -52,7 +52,7 @@ h1 {
     justify-content: center;
     text-align: center;
 }
-/** Second-level headings - font size 36px, 12px of space below ***/
+/** Second-level headings - font size 36px, 12px of space below **/
 h2 {
     font-size: 36px;
     margin-bottom: 12px;
@@ -83,7 +83,7 @@ footer a:hover {
     - set the background-colour to cornflower blue (see colour palette above),
     - change the text colour to white, and 
     - change the cursor to pointer.
-*/
+**/
 .fake-button:hover,
 .blue-hover:hover {
   text-decoration: underline;
@@ -93,40 +93,97 @@ footer a:hover {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /************* header/footer styling *************/
 
 /* TO DO:
-    - the header and footer will be the same mustard-yellow as the buttons.
-    - the header is 150px tall.
-    - the header image is 100px wide and tall with 25px of space above, below, and on its left, and the top-level heading is centered in the remaining width.
-    - there will be 25px of space between the header and main, and 50px of space between main and footer.
+    - x the header and footer will be the same mustard-yellow as the buttons.
+    - x the header is 150px tall.
+    - x the header image is 100px wide and tall with 25px of space above, below, and on its left, and the top-level heading is centered in the remaining width.
+    - x there will be 25px of space between the header and main, and 50px of space between main and footer.
     - the footer will be 60px tall, have a font-weight of 200, and the text within will be centered vertically and horizontally.
 */
 
-
-
-
+/** header: mustard-yellow, 150px tall **/
+header {
+  background-color: #E5AF42;
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+/** header img: 100px wide and tall with 25px of space above, below, and on its left **/
+header img {
+  width: 100px;
+  height: 100px;
+  margin: 25px 0 25px 25px;
+}
+/** top-level heading is centered in the remaining width **/
+header h1 {
+  flex: 1;
+  text-align: center;
+}
+/** space between header and main, and main and footer **/
+header + section {
+  margin-top: 25px;
+}
+section + footer {
+  margin-bottom: 50px;
+}
+/** footer: mustard-yellow, 60px tall, font-weight of 200, text centered vertically and horizontally **/
+footer {
+  background-color: #E5AF42;
+  height: 60px;
+  font-weight: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
 
 
 /************* index page *************/
 
 /* TO-DO: 
-    - this is a 2-column layout: text on the left, and an image on the right. The image will be 300px wide, with 25px between it and the text column, which takes up the remaining space. The image will also have 50px of space below.
-    - the h2 on this page will have a line-height equal to the font size.
-    - each paragraph on this page will have 12px of space beneath it.
-    - each fake-button on this page will be 250px wide with 150px of space between them.
-    - the pair of fake-buttons will be centered on the page. HINT: can calculate the required margin to make them appear to be centered.
+    - x this is a 2-column layout: text on the left, and an image on the right. 
+        x The image will be 300px wide, with 25px between it and the text column, which takes up the remaining space. 
+        x The image will also have 50px of space below.
+    - x the h2 on this page will have a line-height equal to the font size.
+    - x each paragraph on this page will have 12px of space beneath it.
+    - x each fake-button on this page will be 250px wide with 150px of space between them.
+    - x the pair of fake-buttons will be centered on the page. HINT: can calculate the required margin to make them appear to be centered.
 */
+
+/** 2-column layout **/
+.layout {
+  display: flex;
+}
+/** Text column left **/
+.layout .text {
+  flex: 1;
+}
+/** Image column: right, 300px wide, 25px of space to the left, 50px of space below **/
+.layout img {
+  width: 300px;
+  margin-left: 25px;
+  margin-bottom: 50px;
+}
+/** h2 styling: line-height equal to font size **/
+.layout h2 {
+  line-height: 36px; /* equal to font size */
+}
+/** each paragraph: 12px of space beneath it **/
+.layout p {
+  margin-bottom: 12px;
+}
+/** buttons container: centered with gap between them **/
+.layout .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  margin-top: 24px;
+}
+.layout .fake-button {
+  width: 250px;
+}
 
 
 
