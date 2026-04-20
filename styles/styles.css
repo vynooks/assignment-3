@@ -27,22 +27,74 @@ body {
     display: flex;
 }
 
- 
 
 /************* site-wide text styling *************/
 
 /* TO DO:
-    - first-level headings are size 48px, centered vertically and horizontally in the available space.
-    - 2nd-level headings have a font size of 36px, and 12px of space below.
-    - any element with the .large-text class has a font size of 24px.
-    - any element with the .fake-button class will have a background colour of mustard yellow (see colour palette above), be center aligned, with a line-height of 3 and a solid black border that is 1px wide.
-    - all anchors will have the underline removed and be black in colour. all anchors in the main and footer sections will be underlined in their hover-state.
+    - x first-level headings are size 48px, centered vertically and horizontally in the available space. 
+    - x 2nd-level headings have a font size of 36px, and 12px of space below. 
+    - x any element with the .large-text class has a font size of 24px. 
+    - x any element with the .fake-button class will have a background colour of mustard yellow (see colour palette above), be center aligned, with a line-height of 3 and a solid black border that is 1px wide. 
+    - x all anchors will have the underline removed and be black in colour.
+    - x all anchors in the main and footer sections will be underlined in their hover-state.
     - the hover-state of .fake-button and .blue-hover elements will:
         - add an underline, 
         - set the background-colour to cornflower blue (see colour palette above),
         - change the text colour to white, and 
         - change the cursor to pointer.
 */
+
+/** First-level headings - size 48px, centreed vertically & horizontally **/
+h1 {
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/** Second-level headings - font size 36px, 12px of space below ***/
+h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+/** element with, large-text class - font size 24px **/
+.large-text {
+    font-size: 24px;
+}
+/** element with .fake-button class - background colour of mustard yellow, center aligned, line-height of 3, solid black border that is 1px wide **/
+.fake-button {
+    background-color: #E5AF42;
+    text-align: center;
+    line-height: 3;
+    border: 1px solid black;
+}
+/** all anchors - underline removed, black in colour. all anchors in the main and footer sections will be underlined in their hover-state. **/
+a {
+    text-decoration: none;
+    color: black;
+}
+/** main and footer anchors - underlined in hover state **/
+main a:hover,
+footer a:hover {
+    text-decoration: underline;
+}
+/** hover-state of .fake-button and .blue-hover elements will:
+    - add an underline, 
+    - set the background-colour to cornflower blue (see colour palette above),
+    - change the text colour to white, and 
+    - change the cursor to pointer.
+*/
+.fake-button:hover,
+.blue-hover:hover {
+  text-decoration: underline;
+  background-color: cornflowerblue;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
 
 
 
