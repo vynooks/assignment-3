@@ -37,7 +37,7 @@ body {
     - x any element with the .fake-button class will have a background colour of mustard yellow (see colour palette above), be center aligned, with a line-height of 3 and a solid black border that is 1px wide. 
     - x all anchors will have the underline removed and be black in colour.
     - x all anchors in the main and footer sections will be underlined in their hover-state.
-    - the hover-state of .fake-button and .blue-hover elements will:
+    - x the hover-state of .fake-button and .blue-hover elements will:
         - add an underline, 
         - set the background-colour to cornflower blue (see colour palette above),
         - change the text colour to white, and 
@@ -87,7 +87,7 @@ footer a:hover {
 .fake-button:hover,
 .blue-hover:hover {
   text-decoration: underline;
-  background-color: cornflowerblue;
+  background-color: #4278e5;
   color: white;
   cursor: pointer;
 }
