@@ -175,15 +175,19 @@ footer {
   margin-bottom: 12px;
 }
 /** buttons container: centered with gap between them **/
-.layout .buttons {
-  display: flex;
-  justify-content: center;
-  gap: 150px;
-  margin-top: 24px;
+.buttons {
+  width: 650px;        /* 250 + 150 + 250 */
+  margin: 24px auto;   /* centers the pair horizontally */
 }
-.layout .fake-button {
+.fake-button {
   width: 250px;
+  display: inline-block;
 }
+.fake-button:first-child {
+  margin-right: 150px;
+}
+
+
 
 
 
