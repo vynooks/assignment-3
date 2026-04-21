@@ -139,8 +139,6 @@ footer {
 }
 
 
-
-
 /************* index page *************/
 
 /* TO-DO: 
@@ -250,28 +248,57 @@ footer {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /************* contact page *************/
 /* TO DO:
-    - the main section of the .contact page will be 420px tall, and centered.
-    - the contents will be 2 columns: the labels column is 150px wide and right-aligned, and the input column is 300px wide. There will be 24px of space between the columns, and the pair of columns will be centered on the page.
-    - the textarea element will be 150px tall.
-    - all form input, textarea, and and button elements will have the same font as the rest of the page, a line-height of 24px, a font-size of 16px, and the same border as other buttons on the site. There will be 24px of space below each of these elements.
+    - x the main section of the .contact page will be 420px tall, and centered.
+    - x the contents will be 2 columns: the labels column is 150px wide and right-aligned, and the input column is 300px wide. 
+        x There will be 24px of space between the columns, and the pair of columns will be centered on the page.
+    - x the textarea element will be 150px tall.
+    - all form input, textarea, and and button elements will have the same font as the rest of the page, 
+        a line-height of 24px, a font-size of 16px, and the same border as other buttons on the site. 
+        There will be 24px of space below each of these elements.
     - the edges of the button will line up exactly with the text-area element. HINT: time for some math!
 */
+/** main section of the contact page: 420px tall, centered **/
+.contact main,
+.contact-page {
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/** labels column: 150px wide, right-aligned **/
+.contact-form .labels {
+  width: 150px;
+  text-align: right;
+}
+/** inputs column: 300px wide **/
+.contact-form .inputs {
+  width: 300px;
+}
+/** centers columns & 24px space between them **/
+.contact-form {
+    display: flex;
+    gap: 24px;           
+}
+/** textarea: 150px tall **/
+.contact-form textarea {
+  height: 150px;
+}
+/** input, textarea, button: same font, line-height, and border **/
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  font-family: inherit;  
+  line-height: 24px;
+  font-size: 16px;
+  border: 1px solid black; 
+  width: 100%;
+  margin-bottom: 24px;     
+  box-sizing: border-box; 
+}
+
+
 
 
 
