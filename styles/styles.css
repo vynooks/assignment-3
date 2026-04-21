@@ -190,16 +190,65 @@ footer {
 /************* bookings page *************/
 
 /* TO-DO:
-    - the contents of the booking-page will be 600px wide, and all content centered within the available space.
-    - text will have a size of 18px.
-    - there will be 12px of space below the day-selectors, and 20px of space between each list item. List items are 60px wide.
-    - List items & the small-button elements will have a solid black border that is 1px wide. Small-buttons will also have 5px of space between the border and the content.
-    - items tagged with .top-margin will have 24 px of space above, and 12px of space below.
-    - the "clear days" button will be 200px wide.
-    - any element tagged with the .clicked class will turn mustard yellow. **This will be very important for your JavaScript.**
+    - x the contents of the booking-page will be 600px wide, and all content centered within the available space.
+    - x text will have a size of 18px.
+    - x there will be 12px of space below the day-selectors, and 20px of space between each list item. List items are 60px wide.
+    - x List items & the small-button elements will have a solid black border that is 1px wide. Small-buttons will also have 5px of space between the border and the content.
+    - x items tagged with .top-margin will have 24 px of space above, and 12px of space below.
+    - x the "clear days" button will be 200px wide.
+    - x any element tagged with the .clicked class will turn mustard yellow. **This will be very important for your JavaScript.**
     - all items within the page will be centered within their available space.
 
 */
+
+/** booking-page: 600px wide, contents centered, font size 18px **/
+.booking-page {
+  width: 600px;
+  margin: 0 auto;    
+  text-align: center;   
+  font-size: 18px;
+}
+/** 12px space below day selectors **/
+.booking-page ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;   
+}
+/** 20px space between list items, 60px wide **/
+.booking-page li {
+  width: 60px;
+  margin: 0 10px;       
+  list-style: none;
+  border: 1px solid black;
+  text-align: center;
+}
+/** small-button: 5px padding, 1px solid black border **/
+.small-button {
+  border: 1px solid black;
+  padding: 5px;    
+}
+/** top-margin: 24px space above, 12px space below **/
+.top-margin {
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+/** clear-days button: 200px wide **/
+.clear-days {
+  width: 200px;
+}
+/** clicked elements turn mustard yellow **/
+.clicked {
+  background-color: #E5AF42;  
+}
+/** center all elements within the booking page **/
+.booking-page ul,
+.booking-page button,
+.booking-page nav {
+  margin: 0 auto;
+}
+
+
+
 
 
 
