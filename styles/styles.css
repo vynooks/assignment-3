@@ -130,16 +130,14 @@ main {
 /** footer: mustard-yellow, 60px tall, font-weight of 200, text centered vertically and horizontally **/
 footer {
     background-color: #E5AF42;
-    min-height: 60px;
+    height: 60px;
     font-weight: 200;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
 }
-footer p {
-  margin: 0;
-}
+
 
 
 
@@ -217,7 +215,7 @@ footer p {
     display: flex;
     justify-content: center;
     margin-bottom: 12px; 
-    padding: 0;  
+    padding: 0;
 }
 /** 20px space between list items, 60px wide **/
 .booking-page li {
