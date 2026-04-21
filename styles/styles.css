@@ -130,13 +130,17 @@ main {
 /** footer: mustard-yellow, 60px tall, font-weight of 200, text centered vertically and horizontally **/
 footer {
     background-color: #E5AF42;
-    height: 60px;
+    min-height: 60px;
     font-weight: 200;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
 }
+footer p {
+  margin: 0;
+}
+
 
 
 /************* index page *************/
@@ -203,48 +207,48 @@ footer {
 
 /** booking-page: 600px wide, contents centered, font size 18px **/
 .booking-page {
-  width: 600px;
-  margin: 0 auto;    
-  text-align: center;   
-  font-size: 18px;
+    width: 600px;
+    margin: 0 auto;    
+    text-align: center;   
+    font-size: 18px;
 }
 /** 12px space below day selectors **/
 .booking-page ul {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 12px;   
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px; 
+    padding: 0;  
 }
 /** 20px space between list items, 60px wide **/
 .booking-page li {
-  width: 60px;
-  margin: 0 10px;       
-  list-style: none;
-  border: 1px solid black;
-  text-align: center;
+    width: 60px;
+    margin: 0 10px;       
+    list-style: none;
+    border: 1px solid black;
+    text-align: center;
 }
 /** small-button: 5px padding, 1px solid black border **/
 .small-button {
-  border: 1px solid black;
-  padding: 5px;    
+    border: 1px solid black;
+    padding: 5px;    
 }
 /** top-margin: 24px space above, 12px space below **/
 .top-margin {
-  margin-top: 24px;
-  margin-bottom: 12px;
+    margin-top: 24px;
+    margin-bottom: 12px;
 }
 /** clear-days button: 200px wide **/
 .clear-days {
-  width: 200px;
+    width: 200px;
 }
 /** clicked elements turn mustard yellow **/
 .clicked {
-  background-color: #E5AF42;  
+    background-color: #E5AF42;  
 }
 /** center all elements within the booking page **/
 .booking-page ul,
-.booking-page button,
-.booking-page nav {
-  margin: 0 auto;
+.booking-page button {
+    margin: 0 auto;
 }
 
 
