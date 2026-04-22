@@ -176,7 +176,7 @@ footer {
 /** buttons container: centered with gap between them **/
 .buttons {
     width: 650px;        /* 250 + 150 + 250 */
-    margin: 24px auto; 
+    margin: 24px; 
 }
 .fake-button {
     width: 250px;
@@ -246,6 +246,18 @@ footer {
 .booking-page button {
     margin: 0 auto;
 }
+
+.full,
+.half {
+  width: auto;             
+  margin: 0 10px;            
+  border: 1px solid black;  
+  text-align: center;
+  background-color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
 
 
 /************* contact page *************/
