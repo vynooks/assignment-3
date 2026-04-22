@@ -254,7 +254,7 @@ footer {
     - x the contents will be 2 columns: the labels column is 150px wide and right-aligned, and the input column is 300px wide. 
         x There will be 24px of space between the columns, and the pair of columns will be centered on the page.
     - x the textarea element will be 150px tall.
-    - xall form input, textarea, and and button elements will have the same font as the rest of the page, 
+    - xa ll form input, textarea, and and button elements will have the same font as the rest of the page, 
         a line-height of 24px, a font-size of 16px, and the same border as other buttons on the site. 
         There will be 24px of space below each of these elements.
     - x the edges of the button will line up exactly with the text-area element. HINT: time for some math!
@@ -268,11 +268,14 @@ footer {
     align-items: center;
 }
 /** labels column: 150px wide, right-aligned **/
-.contact-form .labels {
-  width: 150px;
-  text-align: right;
+.contact-form label {
   display: block;
+  margin-bottom: 24px;
+  line-height: 24px;
+  white-space: nowrap;
 }
+
+
 /** inputs column: 300px wide **/
 .contact-form .inputs {
   width: 300px;
