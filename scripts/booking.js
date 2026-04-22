@@ -26,7 +26,7 @@ dayButtons.forEach(day => {
         }
         updateCost();
     };
-})
+});
 
 
 
