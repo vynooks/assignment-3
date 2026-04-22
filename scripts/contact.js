@@ -2,3 +2,12 @@
 
 // hint: you can change the style of an element by modifying the value of that element's .style.fontSize, or by updating its .classList.
 
+const contactForm = document.querySelector(".contact-form");
+contactForm.onsubmit = event => {
+    event.preventDefault();
+    const contactPage = document.querySelector(".contact-page");
+    contactPage.innerHTML = "<p>Thank you for your message!</p>";
+
+    contactPage.style.fontSize = "24px";
+    contactPage.style.textAlign = "center";
+};
