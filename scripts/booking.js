@@ -6,7 +6,7 @@ let pricePerDay = 35;
 let dayCount = 0;
 
 const dayButtons = document.querySelectorAll(".booking-page li");
-const weeklyCost = document.querySelector(".top-margin");
+const costText = document.querySelector(".cost-text");
 const clearDaysButton = document.querySelector(".clear-days");
 const fullDayButton = document.querySelector(".full");
 const halfDayButton = document.querySelector(".half");
@@ -24,7 +24,7 @@ dayButtons.forEach(day => {
             day.classList.add("clicked");
             dayCount++;
         }
-        updateTotal();
+        updateCost();
     };
 })
 
@@ -35,32 +35,29 @@ dayButtons.forEach(day => {
 clearDaysButton.onclick = () => {
     dayButtons.forEach(day => day.classList.remove("clicked"));
     dayCount = 0;
-    weeklyCost.textContent = "My weekly cost will be $0.";
+    costText.textContent = "My weekly cost will be $0.";
 };
 
 
-/********* change rate *********/
+/********* change rate *********/// when the full-day button is clicked, the daily rate is set back to $35, the clicked class is added to "full" and removed from "half", and the total cost is recalculated.
+fullDayButton.onclick = () => {
+    pricePerDay = 35;
+    fullDayButton.classList.add("clicked");
+    halfDayButton.classList.remove("clicked");
+    updateCost();
+};
 // when the half-day button is clicked, set the daily rate to $20, add the "clicked" class to the "half" element, remove it from the "full" element, and recalculate the total cost.
-if (halfDayButton && fullDayButton) {
-    halfDayButton.onclick = () => {
-        pricePerDay = 20;
-        halfDayButton.classList.add("clicked");
-        fullDayButton.classList.remove("clicked");
-        updateTotal();
-    };
-// when the full-day button is clicked, the daily rate is set back to $35, the clicked class is added to "full" and removed from "half", and the total cost is recalculated.
-    fullDayButton.onclick = () => {
-        pricePerDay = 35;
-        fullDayButton.classList.add("clicked");
-        halfDayButton.classList.remove("clicked");
-        updateTotal();
-    };
-}
+halfDayButton.onclick = () => {
+    pricePerDay = 20;
+    halfDayButton.classList.add("clicked");
+    fullDayButton.classList.remove("clicked");
+    updateCost();
+};
 
 
 /********* calculate *********/
 // when a calculation is needed, set the innerHTML of the calculated-cost element to the appropriate value
-function updateTotal() {
-    weeklyCost.textContent =
+function updateCost() {
+    costText.textContent =
         "My weekly cost will be $" + (dayCount * pricePerDay) + ".";
 }
