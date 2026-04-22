@@ -176,7 +176,7 @@ footer {
 /** buttons container: centered with gap between them **/
 .buttons {
     width: 650px;        /* 250 + 150 + 250 */
-    margin: 24px auto;   /* centers the pair horizontally */
+    margin: 24px auto; 
 }
 .fake-button {
     width: 250px;
