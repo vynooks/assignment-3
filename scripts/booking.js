@@ -8,7 +8,6 @@ let dayCount = 0;
 const dayButtons = document.querySelectorAll(".booking-page li");
 const weeklyCost = document.querySelector(".top-margin");
 const clearDaysButton = document.querySelector(".clear-days");
-
 const fullDayButton = document.querySelector(".full");
 const halfDayButton = document.querySelector(".half");
 
@@ -18,11 +17,11 @@ const halfDayButton = document.querySelector(".half");
 // added challenge: don't update the dayCounter if the same day is clicked more than once. hint: .classList.contains() might be helpful here!
 dayButtons.forEach(day => {
     day.onclick = () => {
-        if (day.classList.contains(".clicked")) {
-            day.classList.remove(".clicked");
+        if (day.classList.contains("clicked")) {
+            day.classList.remove("clicked");
             dayCount--;
         } else {
-            day.classList.add(".clicked");
+            day.classList.add("clicked");
             dayCount++;
         }
         updateTotal();
@@ -30,10 +29,11 @@ dayButtons.forEach(day => {
 })
 
 
+
 /********* clear days *********/
 // when the clear-button is clicked, the "clicked" class is removed from all days, any other relevant variables are reset, and the calculated cost is set to 0.
 clearDaysButton.onclick = () => {
-    dayButtons.forEach(day => day.classList.remove(".clicked"));
+    dayButtons.forEach(day => day.classList.remove("clicked"));
     dayCount = 0;
     weeklyCost.textContent = "My weekly cost will be $0.";
 };
@@ -44,15 +44,15 @@ clearDaysButton.onclick = () => {
 if (halfDayButton && fullDayButton) {
     halfDayButton.onclick = () => {
         pricePerDay = 20;
-        halfDayButton.classList.add(".clicked");
-        fullDayButton.classList.remove(".clicked");
+        halfDayButton.classList.add("clicked");
+        fullDayButton.classList.remove("clicked");
         updateTotal();
     };
 // when the full-day button is clicked, the daily rate is set back to $35, the clicked class is added to "full" and removed from "half", and the total cost is recalculated.
     fullDayButton.onclick = () => {
         pricePerDay = 35;
-        fullDayButton.classList.add(".clicked");
-        halfDayButton.classList.remove(".clicked");
+        fullDayButton.classList.add("clicked");
+        halfDayButton.classList.remove("clicked");
         updateTotal();
     };
 }

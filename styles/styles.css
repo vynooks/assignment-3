@@ -236,6 +236,8 @@ footer {
 /** clear-days button: 200px wide **/
 .clear-days {
     width: 200px;
+    height: 60px;
+    font-size: 18px;
 }
 /** clicked elements turn mustard yellow **/
 .clicked {
