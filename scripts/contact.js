@@ -9,5 +9,4 @@ contactForm.onsubmit = event => {
     contactPage.innerHTML = "<p>Thank you for your message!</p>";
 
     contactPage.style.fontSize = "24px";
-    contactPage.style.textAlign = "center";
-};
+    contactPage.classList.add("thank-you-top-middle");};

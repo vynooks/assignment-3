@@ -135,7 +135,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 30px;
+    padding: 10px 20px;
 }
 
 
@@ -175,6 +176,9 @@ footer {
 }
 /** buttons container: centered with gap between them **/
 .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 150px; /* space between buttons */
     width: 650px;        /* 250 + 150 + 250 */
     margin: 24px; 
 }
@@ -183,7 +187,9 @@ footer {
     display: inline-block;
 }
 .fake-button:first-child {
+    margin-left: 250px;
     margin-right: 150px;
+    justify-content: center;
 }
 
 
@@ -255,7 +261,6 @@ footer {
   width: auto;             
   margin: 0 10px;            
   border: 1px solid black; 
-  background-color: transparent; 
   text-align: center;
   cursor: pointer;
   font-size: 16px;
@@ -284,14 +289,14 @@ footer {
 }
 /** labels column: 150px wide, right-aligned **/
 .contact-form label {
-  display: block;
-  margin-bottom: 24px;
-  line-height: 24px;
-  white-space: nowrap;
+    display: block;
+    margin-bottom: 24px;
+    line-height: 24px;
+    white-space: nowrap;
 }
 /** inputs column: 300px wide **/
 .contact-form .inputs {
-  width: 300px;
+    width: 300px;
 }
 /** centers columns & 24px space between them **/
 .contact-form {
@@ -300,19 +305,29 @@ footer {
 }
 /** textarea: 150px tall **/
 .contact-form textarea {
-  height: 150px;
+    height: 150px;
 }
 /** input, textarea, button: same font, line-height, and border **/
 .contact-form input,
 .contact-form textarea,
 .contact-form button {
-  font-family: inherit;  
-  line-height: 24px;
-  font-size: 16px;
-  border: 1px solid black; 
-  width: 100%;
-  margin-bottom: 24px;     
-  box-sizing: border-box; 
+    font-family: inherit;  
+    line-height: 24px;
+    font-size: 16px;
+    border: 1px solid black; 
+    width: 100%;
+    margin-bottom: 24px;     
+    box-sizing: border-box; 
+}
+.contact-form button {
+  padding: 12px 0; 
+}
+
+.thank-you-top-middle {
+  justify-content: center;  
+  align-items: flex-start;   
+  padding-top: 0px;         
+  text-align: center;
 }
 
 
